@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Scores, Updated in Real Time | SportPulse Live</title>
+<meta name="description" content="Live scores and in-game alerts from every major U.S. league, pulled continuously from broadcast feeds and beat reporters and posted within seconds of the play.">
+<link rel="canonical" href="https://sportpulse-live-1c31.sites.tibly.ai/live-scores">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sportpulse-live-1c31.sites.tibly.ai/live-scores">
+<meta property="og:site_name" content="SportPulse Live">
+<meta property="og:title" content="Live Scores, Updated in Real Time | SportPulse Live">
+<meta property="og:description" content="Live scores and in-game alerts from every major U.S. league, pulled continuously from broadcast feeds and beat reporters and posted within seconds of the play.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<!-- block:header -->
+<header class="sticky top-0 z-50 border-b border-white/10 bg-[#0A0E12]/95 backdrop-blur">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col gap-3 py-4 sm:h-20 sm:flex-row sm:items-center sm:justify-between sm:py-0">
+      <div class="flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+          <span data-tibly-field="business-name" class="font-display text-xl font-bold tracking-tight text-ink">SportPulse <span class="text-brand-500">Live</span></span>
+        </a>
+        <span class="ml-3 inline-flex items-center gap-1.5 rounded-full border border-brand-500/40 bg-brand-500/10 px-2.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand-500 sm:hidden">
+          <span class="h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse"></span>Live
+        </span>
+      </div>
+      <nav aria-label="Primary" class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium">
+        <a href="/" class="text-ink/80 transition hover:text-brand-500">Home</a>
+        <a href="/live-scores" class="text-ink/80 transition hover:text-brand-500">Live Scores</a>
+        <a href="/headlines" class="text-ink/80 transition hover:text-brand-500">Top Headlines</a>
+        <a href="/sources" class="text-ink/80 transition hover:text-brand-500">Our Sources</a>
+        <a href="/about" class="text-ink/80 transition hover:text-brand-500">About</a>
+      </nav>
+      <span class="hidden items-center gap-1.5 rounded-full border border-brand-500/40 bg-brand-500/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-500 sm:inline-flex">
+        <span class="h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse"></span>Live Now
+      </span>
+    </div>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:metric-band -->
+<section class="relative overflow-hidden border-b border-white/10 bg-surface py-20 sm:py-28" data-block="metric-band">
+  <div class="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-brand-500/20 blur-3xl"></div>
+  <div class="pointer-events-none absolute -right-16 bottom-0 h-64 w-64 rounded-full bg-accent-500/10 blur-3xl"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid gap-14 lg:grid-cols-2 lg:items-center lg:gap-16">
+      <div>
+        <span class="inline-flex items-center gap-2 rounded-full border border-brand-500/40 bg-brand-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-500">
+          <span class="h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse"></span>Live Scores Desk
+        </span>
+        <h1 class="mt-6 font-display text-6xl font-bold leading-[0.95] tracking-tight text-ink sm:text-7xl lg:text-8xl">
+          Every score.
+          <span class="block text-brand-500">The instant it changes.</span>
+        </h1>
+        <p class="mt-6 max-w-prose text-lg leading-relaxed text-ink/70">
+          <span data-tibly-field="business-name">SportPulse Live</span> pulls play-by-play data straight from broadcast feeds, league APIs, and beat reporters so the score on your screen matches the one on the field, court, or ice right now.
+        </p>
+      </div>
+      <div class="relative rounded-lg border border-brand-500/30 bg-white/5 backdrop-blur-sm">
+        <div class="flex items-center justify-between border-b border-white/10 px-5 py-4">
+          <span class="font-display text-sm font-semibold uppercase tracking-wider text-ink/60">In Play Right Now</span>
+          <span class="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-brand-500">
+            <span class="h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse"></span>Live
+          </span>
+        </div>
+        <ul class="divide-y divide-white/10">
+          <li class="flex items-center justify-between px-5 py-4">
+            <div class="flex items-center gap-3">
+              <span class="rounded-sm bg-accent-500/15 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-accent-400">NFL</span>
+              <span class="text-sm text-ink/70">Bills @ Chiefs</span>
+            </div>
+            <div class="text-right">
+              <p class="font-display text-lg font-bold text-ink">24&ndash;27</p>
+              <p class="text-xs text-ink/50">Q4 &middot; 2:14</p>
+            </div>
+          </li>
+          <li class="flex items-center justify-between px-5 py-4">
+            <div class="flex items-center gap-3">
+              <span class="rounded-sm bg-brand-500/15 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-brand-500">NBA</span>
+              <span class="text-sm text-ink/70">Celtics @ Knicks</span>
+            </div>
+            <div class="text-right">
+              <p class="font-display text-lg font-bold text-ink">88&ndash;84</p>
+              <p class="text-xs text-ink/50">Q3 &middot; 5:40</p>
+            </div>
+          </li>
+          <li class="flex items-center justify-between px-5 py-4">
+            <div class="flex items-center gap-3">
+              <span class="rounded-sm bg-accent-500/15 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-accent-400">MLB</span>
+              <span class="text-sm text-ink/70">Dodgers @ Braves</span>
+            </div>
+            <div class="text-right">
+              <p class="font-display text-lg font-bold text-ink">5&ndash;2</p>
+              <p class="text-xs text-ink/50">Top 7th</p>
+            </div>
+          </li>
+          <li class="flex items-center justify-between px-5 py-4">
+            <div class="flex items-center gap-3">
+              <span class="rounded-sm bg-brand-500/15 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-brand-500">NHL</span>
+              <span class="text-sm text-ink/70">Oilers @ Rangers</span>
+            </div>
+            <div class="text-right">
+              <p class="font-display text-lg font-bold text-ink">3&ndash;3</p>
+              <p class="text-xs text-ink/50">Overtime</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-16 grid grid-cols-2 gap-8 border-t border-white/10 pt-10 sm:grid-cols-4 lg:mt-20">
+      <div>
+        <p class="font-display text-4xl font-bold text-brand-500 sm:text-5xl">14,200+</p>
+        <p class="mt-1 text-sm text-ink/60">Score updates posted daily</p>
+      </div>
+      <div>
+        <p class="font-display text-4xl font-bold text-ink sm:text-5xl">42</p>
+        <p class="mt-1 text-sm text-ink/60">Leagues and conferences tracked</p>
+      </div>
+      <div>
+        <p class="font-display text-4xl font-bold text-accent-400 sm:text-5xl">3.2s</p>
+        <p class="mt-1 text-sm text-ink/60">Average alert delay after the play</p>
+      </div>
+      <div>
+        <p class="font-display text-4xl font-bold text-ink sm:text-5xl">24/7</p>
+        <p class="mt-1 text-sm text-ink/60">Desk staffed through every window</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:metric-band -->
+<!-- block:feature-grid -->
+<section class="bg-white/[0.03] py-24 sm:py-28" data-block="feature-grid">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <span class="text-xs font-semibold uppercase tracking-wider text-accent-400">Coverage by league</span>
+      <h2 class="mt-3 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
+        Built around kickoff, tip-off, and first pitch
+      </h2>
+      <p class="mt-4 text-ink/70">
+        We monitor the same feeds broadcasters use, then strip out the noise. Here is how fast each sport moves on our board.
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="card">
+        <h3 class="font-display text-xl font-semibold text-ink">NFL</h3>
+        <p class="mt-3 text-sm leading-relaxed text-ink/70">Scoring plays, win probability swings, and injury designations pulled from broadcast feeds and team accounts the moment a play ends.</p>
+        <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-brand-500">Updated on every snap</p>
+      </div>
+      <div class="card">
+        <h3 class="font-display text-xl font-semibold text-ink">NBA</h3>
+        <p class="mt-3 text-sm leading-relaxed text-ink/70">Quarter-by-quarter scoring and clutch-time alerts, plus ejections and technical fouls flagged within seconds of the whistle.</p>
+        <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-brand-500">Updated every 20 to 40 seconds</p>
+      </div>
+      <div class="card">
+        <h3 class="font-display text-xl font-semibold text-ink">MLB</h3>
+        <p class="mt-3 text-sm leading-relaxed text-ink/70">Pitch-by-pitch tracking through the late innings, with no-hitter watches and walk-off alerts the second the ball lands.</p>
+        <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-brand-500">Updated every half inning</p>
+      </div>
+      <div class="card">
+        <h3 class="font-display text-xl font-semibold text-ink">NHL</h3>
+        <p class="mt-3 text-sm leading-relaxed text-ink/70">Period scores, power play goals, and overtime alerts pulled straight from arena broadcast feeds as they happen.</p>
+        <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-brand-500">Updated on every goal</p>
+      </div>
+      <div class="card">
+        <h3 class="font-display text-xl font-semibold text-ink">College Football &amp; Basketball</h3>
+        <p class="mt-3 text-sm leading-relaxed text-ink/70">Ranked matchups, conference races, and upset alerts across Power Four and mid-major programs, tracked all season long.</p>
+        <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-brand-500">Updated every scoring drive</p>
+      </div>
+      <div class="card">
+        <h3 class="font-display text-xl font-semibold text-ink">Soccer: MLS &amp; USMNT</h3>
+        <p class="mt-3 text-sm leading-relaxed text-ink/70">Match clocks, stoppage time drama, and goal alerts synced directly to league data partners for every fixture on the slate.</p>
+        <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-brand-500">Updated on every goal</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:feature-grid -->
+<!-- block:trust-bar -->
+<section class="border-y border-white/10 bg-surface py-14" data-block="trust-bar">
+  <div class="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+    <p class="text-xs font-semibold uppercase tracking-wider text-ink/50">Feeds we monitor around the clock</p>
+    <div class="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+      <span class="font-display text-sm uppercase tracking-wide text-ink/60 transition hover:text-ink">ESPN</span>
+      <span class="font-display text-sm uppercase tracking-wide text-ink/60 transition hover:text-ink">Associated Press</span>
+      <span class="font-display text-sm uppercase tracking-wide text-ink/60 transition hover:text-ink">NFL Network</span>
+      <span class="font-display text-sm uppercase tracking-wide text-ink/60 transition hover:text-ink">Bleacher Report</span>
+      <span class="font-display text-sm uppercase tracking-wide text-ink/60 transition hover:text-ink">The Athletic</span>
+      <span class="font-display text-sm uppercase tracking-wide text-ink/60 transition hover:text-ink">Local Broadcast Affiliates</span>
+      <span class="font-display text-sm uppercase tracking-wide text-ink/60 transition hover:text-ink">Team Beat Reporters</span>
+    </div>
+  </div>
+</section>
+<!-- /block:trust-bar -->
+<!-- block:cta-banner -->
+<section class="bg-white/[0.03] py-24 sm:py-28" data-block="cta-banner">
+  <div class="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+    <h2 class="font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
+      Never miss the moment a game turns
+    </h2>
+    <p class="mt-5 text-lg text-ink/70">
+      Scores update here the same second they hit the wire. If you want the story behind the number, our headlines desk has it covered too.
+    </p>
+    <div class="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a href="/headlines" class="btn">See Today's Headlines</a>
+      <a href="/sources" class="btn-secondary">Meet Our Sources</a>
+    </div>
+  </div>
+</section>
+<!-- /block:cta-banner -->
+<!-- block:footer -->
+<footer class="border-t border-white/10 bg-[#0A0E12] text-ink">
+  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="grid gap-12 md:grid-cols-4">
+      <div class="md:col-span-1">
+        <span data-tibly-field="business-name" class="font-display text-lg font-bold tracking-tight text-ink">SportPulse Live</span>
+        <p class="mt-3 max-w-xs text-sm leading-relaxed text-ink/60">Real-time scores and headlines pulled from the sports accounts that break news first, updated around the clock.</p>
+        <div data-tibly-field="links" class="mt-6 flex items-center gap-4">
+          <a href="https://twitter.com" class="text-sm text-ink/50 transition hover:text-accent-400">Twitter/X</a>
+          <a href="https://instagram.com" class="text-sm text-ink/50 transition hover:text-accent-400">Instagram</a>
+          <a href="https://youtube.com" class="text-sm text-ink/50 transition hover:text-accent-400">YouTube</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-display text-sm font-semibold uppercase tracking-wider text-ink/50">Navigate</h3>
+        <nav aria-label="Footer" class="mt-4 flex flex-col gap-2.5 text-sm">
+          <a href="/" class="text-ink/70 transition hover:text-brand-500">Home</a>
+          <a href="/live-scores" class="text-ink/70 transition hover:text-brand-500">Live Scores</a>
+          <a href="/headlines" class="text-ink/70 transition hover:text-brand-500">Top Headlines</a>
+          <a href="/sources" class="text-ink/70 transition hover:text-brand-500">Our Sources</a>
+          <a href="/about" class="text-ink/70 transition hover:text-brand-500">About</a>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="font-display text-sm font-semibold uppercase tracking-wider text-ink/50">Contact</h3>
+        <ul class="mt-4 flex flex-col gap-2.5 text-sm text-ink/70">
+          <li><a href="tel:+12065550142" data-tibly-field="phone" class="transition hover:text-brand-500">(206) 555-0142</a></li>
+          <li><a href="mailto:newsroom@sportpulselive.com" data-tibly-field="email" class="transition hover:text-brand-500">newsroom@sportpulselive.com</a></li>
+          <li><span data-tibly-field="address">118 Pike Street, Seattle, WA 98101</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display text-sm font-semibold uppercase tracking-wider text-ink/50">Newsroom Hours</h3>
+        <p class="mt-4 text-sm text-ink/70" data-tibly-field="hours">Live desk staffed daily, 6:00 AM to midnight ET</p>
+      </div>
+    </div>
+
+    <div class="mt-16 flex flex-col gap-4 border-t border-white/10 pt-8 text-xs text-ink/40 sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; 2024 <span data-tibly-field="business-name">SportPulse Live</span>. All scores and headlines are aggregated from public sources.</p>
+      <p>Built for fans who refresh too much.</p>
+    </div>
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
